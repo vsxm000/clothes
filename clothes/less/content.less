@@ -1,0 +1,369 @@
+body,p,h1,h2,h3,h4,h5,h6,ul,dl,ol,dt,dd,li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+htnl,body {
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+// 版心
+.w {
+	width: 1200px;
+    margin: 0 auto;
+    position: relative;	
+}
+// 清除
+.clearfix:after {
+    content: ".";
+    height: 0;
+    line-height: 0;
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+.clearfix {
+	*zoom: 1;
+}
+// 头部	
+.header {
+	width: 100%;
+    height: 850px;
+    background: url(../imgs/bg1.jpg) center top no-repeat;
+    position: relative;
+    z-index: 20;
+	// padding-bottom: 76px;
+	.yuyue-guofu {
+		background: url(../imgs/bg1-a-guofu.png) no-repeat;
+		display: block;
+		width: 400px;
+		height: 89px;
+		position: absolute;
+		top: 646px;
+		left: 167px;
+	}
+	.yuyue-laobing {
+		background: url(../imgs/bg1-a-laobing.png) no-repeat;
+		display: block;
+		width: 400px;
+		height: 89px;
+		position: absolute;
+		top: 646px;
+		right: 167px;
+	}
+}
+// 广告区域一
+.bg-1 {
+	background: url(../imgs/bg2.jpg) center top no-repeat;
+    min-width: 1200px;
+	height: 891px;
+	// 预约人数
+	.yuyue {
+		text-align: center;
+		font-size: 130px;
+		color: #e09400;
+		font-weight: 700;
+		line-height: 150px;
+		padding-top: 288px;
+		font-family: '黑体';
+	}
+	.jindu {
+		background: url(../imgs/p3_jd2.png) no-repeat;
+		display: block;
+		width: 1449px;
+		height: 108px;
+		position: absolute;
+		top: 600px;
+		left: -113px;
+	}
+}
+// 广告区域二
+.bg-2 {
+	height: 936px;
+	background: url(../imgs/bg3.jpg) center top no-repeat;
+	// 建议
+	.jianyi {
+		position: absolute;
+		text-align: center;
+		top: 233px;
+		left: 0;
+		width: 100%;
+		color:#2f2f2f;;
+	}
+	// tab切换点击文字
+	.tab {
+		border-bottom: 2px solid #353535;
+		border-bottom-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-color: rgb(53, 53, 53);
+		width: 1023px;
+		position: absolute;
+		top: 299px;
+		left: 80px;
+		height: 42px;
+		.on{
+			display: block;
+			width: 50%;
+			float: left;
+			text-decoration:  none;
+			.tab-txt {
+				width: 120px;
+				margin: 0 auto;
+				text-align: center;
+				font-size: 24px;
+				color: #ffffff;
+				font-weight: bold;
+				line-height: 24px;
+				padding-bottom: 17px;
+			}
+			.tab-txt:hover {
+				border-bottom: 5px solid #e19501;
+				color: #e19501;
+			}
+		}
+	}
+	// tab切换区，内容展示
+	.tab-content {
+		position: absolute;
+		top: 380px;
+		// left: 80px;
+		color: #fff;
+		display:flex;
+		// overflow: hidden;
+		// text-align: center;
+		// 中间分割竖线
+		.shu {
+			background: url(../imgs/config_tab_line1.png) no-repeat;
+			width: 1px;
+			height: 398px;
+			position: absolute;
+			top: -74px;
+			left: 605px;
+		}
+		p {
+			height: 36px;
+			padding-bottom: 27px;
+			color: #fff;
+			font-size: 16px;
+			line-height: 36px;
+		}
+		.btn {
+			display: inline-block;
+			width: 170px;
+			height: 36px;
+			margin-left: 22px;
+			color: #121212;
+			font-size: 16px;
+			line-height: 36px;
+			background-color: #e69800;
+			text-align: center;
+			text-shadow: none;
+			text-decoration: none;
+		}
+		#btn {
+			color: #e69800;
+			text-decoration:  underline;
+		}
+		// wegame部分
+		.tab-wegame {
+			display: block;
+			float: left;
+			// width: 55%;
+			flex: 1;
+			// padding-left: 207px;
+			margin-left: 207px;
+			#wegame-bg {
+				margin-bottom: 50px;
+			}
+		}
+		// 电脑管家部分
+		.tab-guanjia {
+			// text-align: center;
+			display: block;
+			float: left;
+			flex: 1;
+			// padding-left: 231px;
+			margin-left: 231px;
+			#guanjia-bg {
+				margin-bottom: 50px;
+			}
+			a {
+				margin-bottom: 27px;
+			}	
+			.yj {
+				// margin-left: 76px;
+				padding-top: 5px;
+				color: #000;
+				font-size: 14px;
+				font-weight: normal;
+				display: block;
+				line-height: 14px;
+				.yj1 {
+					color: #5c1800;
+					font-size: 12px;
+					font-weight: normal;
+					display: block;
+					line-height: 12px;
+					padding-top: 2px;
+				}
+			}
+		}
+
+
+		// 配置表内容区域
+		.config2_1 {
+			position: absolute;
+			top: 19px;
+			left: 56px;
+			width: 250px;
+		}
+		.config2_2 {
+			position: absolute;
+			top: 19px;
+			left: 324px;
+			width: 250px;
+		}
+		.config2_3 {
+			position: absolute;
+			top: 19px;
+			left: 602px;
+			width: 250px;
+		}
+		.config2_4 {
+			position: absolute;
+			top: 19px;
+			left: 881px;
+			width: 250px;
+		}
+		.config2_txt1 {
+			font-size: 18px;
+			color: #e79900;
+			padding-bottom: 3px;
+		}
+		// 配置表内容区域 分割线
+		.config2_line {
+			background: url(../imgs/config_tab_line1.png) no-repeat;
+			width: 1px;
+			height: 298px;
+		}
+		.config2_line.config2_line1 {
+			position: absolute;
+			top: -34px;
+			left: 306px;
+		}
+		.config2_line {
+			background: url(../imgs/config_tab_line1.png) no-repeat;
+			width: 1px;
+			height: 298px;
+		}
+		.config2_line.config2_line2 {
+			position: absolute;
+			top: -34px;
+			left: 581px;
+		}
+		.config2_line {
+			background: url(../imgs/config_tab_line1.png) no-repeat;
+			width: 1px;
+			height: 298px;
+		}
+		.config2_line.config2_line3 {
+			position: absolute;
+			top: -34px;
+			left: 865px;
+		}
+
+	}
+}
+// 广告区域三
+.bg-3 {
+	height: 1130px;
+	background: url(../imgs/bg4.jpg) center top no-repeat;
+	.top {
+		p {
+			text-align: center;
+			font-size: 24px;
+			color: #7a7c7f;
+			line-height: 24px;
+			position: absolute;
+			top: 160px;
+			left: 0;
+			width: 100%;
+		}
+		span {
+			text-align: center;
+			font-size: 100px;
+			color: #e09400;
+			font-weight: 700;
+			line-height: 100px;
+			position: absolute;
+			top:200px;
+			left: 0;
+			width: 100%;
+			
+		}
+	}
+	.car {
+		background: url(../imgs/carimg.png) no-repeat;
+		width: 317px;
+		height: 540px;
+		position: absolute;
+		top: 335px;
+		left: 50%;
+		margin-left: -158px;
+	} 
+	#yaoqing {
+		background: url(../imgs/yqhysc.png) no-repeat;
+		width: 460px;
+		height: 165px;
+		position: absolute;
+		top: 890px;
+		left: 50%;
+		margin-left: -230px;
+		
+	}
+}
+// 广告区域四
+.bg-4 {
+	height: 417px;
+	background: url(../imgs/bg5.jpg) center top no-repeat;
+	.lis {
+		clear: both;
+		display: block;
+		overflow: hidden;
+		padding-left: 131px;
+		padding-top: 0;
+		position: absolute;
+		top: 200px;
+		li {
+			margin-bottom: 15px;
+			clear: both;
+			display: block;
+			overflow: hidden;
+			.yuan {
+				background: url(../imgs/p3_bg7_gz_k.png) no-repeat;
+				width: 22px;
+				height: 22px;
+				background-position: 0 0;
+				margin-right: 16px;
+				color: #fff;
+				font-size: 14px;
+				text-align: center;
+				line-height: 22px;
+			}
+			.bg-4-text {
+				width: 900px;
+				// float: left;
+				font-size: 16px;
+				color: #2e2e2e;
+			}
+			.fl {
+				float: left;
+			}
+			div {
+				font-size: 16px;
+				color: #2e2e2e;
+			}
+		}
+	}
+	
+}
